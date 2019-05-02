@@ -24,11 +24,23 @@ namespace P13_ForEncadeado
             {
                 for (int contadorColuna = 0; contadorColuna < 10; contadorColuna++)
                 {
-                    Console.WriteLine("*");
+                    // Estava Console.WriteLine onde era para estar Console.Write...
+                    Console.Write("*");
                     if (contadorColuna >= contadorLinha)
                         break;
                 }
                     Console.WriteLine();
+            }
+
+            // Uma forma diferente de fazer o desenho de asteriscos
+            for (int contadorLinha = 0; contadorLinha < 10; contadorLinha++)
+            {
+                for (int contadorColuna = 0; contadorColuna <= contadorLinha; contadorColuna++)
+                {
+                    // Estava Console.WriteLine onde era para estar Console.Write...
+                    Console.Write("*");
+                }
+                Console.WriteLine();
             }
 
             Console.ReadLine();
